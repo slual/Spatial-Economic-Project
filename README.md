@@ -34,7 +34,7 @@ Utility depends on:
 - commuting costs between locations  
 - individual-specific preferences  
 
-Because individuals differ in their preferences, commuting patterns are determined probabilistically rather than deterministically.
+Because individuals differ in their preferences, commuting patterns are determined by probabilities.
 
 
 
@@ -112,7 +112,7 @@ After convergence, the model produces:
 - A commuting flow matrix ℓ_kn  
 - A price index  
 
-These results describe how individuals are distributed across residence–workplace pairs and how economic activity is spatially organized.
+The results describe how individuals are distributed across residence–workplace pairs and how economic activity is spatially organized.
 
 
 
