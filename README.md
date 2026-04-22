@@ -2,7 +2,7 @@
 
 A computational spatial equilibrium model that solves for wages, rents, and commuting flows across locations using a fixed-point algorithm.
 
-Based on Dingel and Tintelnot (2025), with a focus on how individuals sort across residence–workplace pairs in granular settings.
+Based on Dingel and Tintelnot, with a focus on how individuals sort across residence–workplace pairs in granular settings.
 
 
 
