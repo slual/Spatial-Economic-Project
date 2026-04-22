@@ -4,7 +4,7 @@ A computational spatial equilibrium model that solves for wages, rents, and comm
 
 Based on Dingel and Tintelnot (2025), with a focus on how individuals sort across residence–workplace pairs in granular settings.
 
----
+
 
 ## Project Structure
 
@@ -20,7 +20,7 @@ Based on Dingel and Tintelnot (2025), with a focus on how individuals sort acros
 - `main.py`  
   Runs the model and produces results.
 
----
+
 
 ## Model Setup
 
@@ -36,7 +36,7 @@ Utility depends on:
 
 Because individuals differ in their preferences, commuting patterns are determined probabilistically rather than deterministically.
 
----
+
 
 ## Core Mechanisms
 
@@ -49,7 +49,7 @@ Workers are more likely to choose:
 
 This generates a distribution of commuting flows across all location pairs.
 
----
+
 
 ### Price Index
 
@@ -57,7 +57,7 @@ The model includes a CES price index over goods:
 
 P = [sum over n of (w_n / A_n)^(1 - sigma)]^(1 / (1 - sigma))
 
----
+
 
 ### Goods Market Clearing
 
@@ -67,13 +67,12 @@ Output = A_n × L_n
 
 Wages adjust so that supply equals demand across locations.
 
----
 
 ### Land Market Clearing
 
 Each location has a fixed amount of land. Rents adjust so that total land demand equals land supply.
 
----
+
 
 ## Equilibrium
 
@@ -87,7 +86,6 @@ such that:
 - the land market clears  
 - individuals are optimally allocated across locations  
 
----
 
 ## Computational Method
 
@@ -102,7 +100,6 @@ The equilibrium is computed using a fixed-point iteration:
 
 Damping is used to ensure stability.
 
----
 
 ## Results
 
@@ -117,7 +114,7 @@ After convergence, the model produces:
 
 These results describe how individuals are distributed across residence–workplace pairs and how economic activity is spatially organized.
 
----
+
 
 ### Convergence
 
@@ -125,11 +122,4 @@ The algorithm converges when changes in wages and rents fall below a chosen tole
 
 Damping plays an important role in preventing instability during iteration.
 
----
 
-### Example Visualization
-
-(Add your generated plot here)
-
-```markdown
-![Equilibrium Plot](plots/equilibrium.png)
